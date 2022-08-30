@@ -46,19 +46,13 @@ header {
 
 }
 
-
 .card{
-
-
     height: 500px;
     width: 350px;
     background-color: crimson;
     border-radius: 12px;
     overflow: hidden;
-    position: relative;
-
-
-    
+    position: relative;    
 }
 
 .card .favorite-icon{
@@ -84,12 +78,4 @@ header {
   
 
 }
-
-
-/*.thumbnail{
-    width:374px;
-    height:217px;
-    border-radius:15px;
-    margin: 0px;
-}*/
 
