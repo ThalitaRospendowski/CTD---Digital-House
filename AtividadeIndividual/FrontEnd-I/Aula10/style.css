@@ -2,37 +2,94 @@
 
 * {
   padding: 0;
-  margin: 0;
+  margin: 0px;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
 
-h1{
+.titulo{
+    display: flex;   
+    justify-content: space-between;  
+    align-items: center;       
     background-color: #00669F;
-    height:50px; 
-    margin:20px;
+    height: 40px;
+    padding: 30px 40px;
 }
 
 footer{
+    align-items: end;       
     background-color: #00669F;
+    height: 30px;
+    font-family: 'Roboto', sans-serif;    
 }
 
-.desconto{
+header {
+
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
     background-color: #1CD1B0;
-}
-
-.foto{
-    background-color:#f6f6f6;
-    display:inline-block;
-    width:374px;
-    height:380px;
+    height: 10px;
+    padding: 20px 40px;
 
 }
 
-.thumbnail{
+
+.main {
+
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 50px; 
+    min-height: 100vh;
+    padding: 80px;
+
+}
+
+
+.card{
+
+
+    height: 500px;
+    width: 350px;
+    background-color: crimson;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+
+
+    
+}
+
+.card .favorite-icon{
+    width:24px;
+    position: absolute;
+    top: 30px;
+    left: 20px;   
+}
+
+.card .background-image {
+    width:100%;
+    height: 180px;
+}
+
+.card .profile-image {
+    display:block;
+    width: 150px;
+    height: 150px;
+    object-fit:cover;
+    border-radius:100%;
+    margin: 0 auto;
+    margin-top: -50px; 
+  
+
+}
+
+
+/*.thumbnail{
     width:374px;
     height:217px;
     border-radius:15px;
     margin: 0px;
-}
+}*/
 
