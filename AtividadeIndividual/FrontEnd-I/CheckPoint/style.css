@@ -29,12 +29,30 @@ header {
   padding: 10px 80px;
 }
 
+a:link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/*Link já visitado*/
+a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/*Quando o mouse passa por cima*/
+a:hover {
+  color: rgb(12, 95, 163);
+  text-decoration: none;
+}
+
 .list-menu {
   display: flex;
   list-style: url('./imgs/img_bol.png');
-  gap: 60px;
+  gap: 120px;
   height: 100%;
 }
+
 
 .main-site {
   width: 100%;
@@ -43,11 +61,12 @@ header {
   justify-content: center;
 }
 
-.main-site .main-background {
+.main-background{
+  height:100vh;
+  background-image: url(https://portalcbncampinas.com.br/wp-content/uploads/2019/11/portalcbncampinas.com.br-campinasinauguranosabadocomplexodebeachtennis-beach-tennis.jpg);
+  background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
-  position: center;
-  background-size: cover;
+  background-size:cover;
 }
 
 .main-site .main-texto {
@@ -56,24 +75,36 @@ header {
   left: 650px;
 }
 
+.main-product{
+  display: flex; /* Aplica a estratégia de flex */
+  flex-wrap: wrap; /* Possibilita os itens irem para a "linha de baixo" caso não exista espaço o suficiente para eles ficarem um ao lado do outro */
+  justify-content: center; /* Diz que os itens do elemento que tiver a classe "main-site-content" irão ficar horizontalmente no centro */
+  gap: 1px; /* Adiciona um espaçamento entre os itens */
+  padding: 5px;
+}
+
 .main-site .main-button {
-  background-color: #f0a83e;
+  background-color: #fff;
+  font-size: 2rem;
   position: absolute;
-  top: 250px;
-  left: 750px;
+  top: 700px;
+  left: 800px;
 }
 
 .main-site .product {
   color: #fb8638;
   align-items: center;
   background-color: #fff;
+  border-bottom: 10px;
   height: 3px;
-  padding: 10px 40px;
+  padding: 50px 40px;
 }
 
 .main-site .main-paragrafo {
   position: absolute;
-  top: 200px;
+  color:#fff;
+  font-size: 80px;
+  top: 300px;
   left: 700px;
 }
 
@@ -88,6 +119,23 @@ header {
   transform: scale(1.1);
 }
 
+.video-container{
+  background-color:#fb8638;
+  margin: 0px -10px 30px 5px;
+  padding: 10px;
+  padding-bottom:50%;
+  position: relative;
+}
+
+.video-container > iframe {
+  position: absolute;
+  top:1%;
+  left:1%;
+  width:96%;
+  height: 96%;
+}
+
+
 footer {
   align-items: end;
   background-color: #dcdcdc;
@@ -98,14 +146,16 @@ footer {
   flex-wrap: wrap;
   list-style: none;
   justify-content: center;
-  gap: 8px;
+  gap: 80px;
   padding: 10px 10px;
 }
 
-footer .img-thumbnail {
+.img-thumbnail {
   display: flex;
-  gap: 5px;
-  height: 10%;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-between;
+  gap: 880px;
 }
 
 @media (max-width: 1024px) {
@@ -113,4 +163,11 @@ footer .img-thumbnail {
     flex-direction: column;
     height: fit-content;
   }
+
+  .main-background{
+    background-image: url(https://static.wixstatic.com/media/1eade9_3bc2af3bf78648238ca74a077d569b4e~mv2.jpg/v1/fill/w_527,h_1424,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/1eade9_3bc2af3bf78648238ca74a077d569b4e~mv2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
 }
